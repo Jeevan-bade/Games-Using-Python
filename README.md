@@ -1,70 +1,61 @@
-Snake Game
+# Snake Game
+
 A classic Snake game implemented in Python using the Turtle graphics library.
 
-Description
+## Description
+
 This project recreates the nostalgic Snake game where the player controls a snake to eat food and grow longer, while avoiding collisions with walls and its own tail.
 
-Features
-Snake Movement: Control the snake using arrow keys (Up, Down, Left, Right)
+## Features
 
-Food Collection: Eat the blue food dots to grow longer and increase score
+- **Snake Movement**: Control the snake using arrow keys (Up, Down, Left, Right)
+- **Food Collection**: Eat the blue food dots to grow longer and increase score
+- **Score Tracking**: Real-time score display at the top of the screen
+- **Collision Detection**: Game ends if snake hits wall or its own tail
+- **Game Over Screen**: Shows final score when game ends
 
-Score Tracking: Real-time score display at the top of the screen
+## Files
 
-Collision Detection: Game ends if snake hits wall or its own tail
+- `main.py`: Main game loop and setup
+- `snake.py`: Snake class implementation (movement, growth, controls)
+- `food.py`: Food class implementation (random positioning)
+- `scoreboard.py`: Score tracking and display
 
-Game Over Screen: Shows final score when game ends
+## Requirements
 
-Files
-main.py: Main game loop and setup
+- Python 3.x
+- Turtle module (comes with standard Python installation)
 
-snake.py: Snake class implementation (movement, growth, controls)
+## How to Run
 
-food.py: Food class implementation (random positioning)
+1. Clone the repository or download the files
+2. Run `main.py` using Python:
+   ```
+   python main.py
+   ```
+3. Use arrow keys to control the snake
+4. Try to get the highest score without crashing!
 
-scoreboard.py: Score tracking and display
+## Controls
 
-Requirements
-Python 3.x
+- **Up Arrow**: Move snake upwards
+- **Down Arrow**: Move snake downwards
+- **Left Arrow**: Move snake to the left
+- **Right Arrow**: Move snake to the right
 
-Turtle module (comes with standard Python installation)
+## Game Rules
 
-How to Run
-Clone the repository or download the files
+1. Each food collected increases your score by 1 and makes the snake longer
+2. Game ends if:
+   - Snake hits the wall
+   - Snake hits its own tail
+3. Higher difficulty as snake grows longer
 
-Run main.py using Python:
+## Customization
 
-Copy
-python main.py
-Use arrow keys to control the snake
-
-Try to get the highest score without crashing!
-
-Controls
-Up Arrow: Move snake upwards
-
-Down Arrow: Move snake downwards
-
-Left Arrow: Move snake to the left
-
-Right Arrow: Move snake to the right
-
-Game Rules
-Each food collected increases your score by 1 and makes the snake longer
-
-Game ends if:
-
-Snake hits the wall
-
-Snake hits its own tail
-
-Higher difficulty as snake grows longer
-
-Customization
 You can easily modify:
+- Game speed by changing the `time.sleep()` value in `main.py`
+- Screen size by modifying the `screen.setup()` parameters
+- Snake and food colors in their respective class files
 
-Game speed by changing the time.sleep() value in main.py
-
-Screen size by modifying the screen.setup() parameters
-
-Snake and food colors in their respective class file
+Enjoy the game!
